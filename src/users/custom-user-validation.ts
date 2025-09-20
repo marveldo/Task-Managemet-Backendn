@@ -9,7 +9,7 @@ export function IsSimilar (property : string , ValidationOptions? : ValidationOp
             constraints : property as any,
             options : ValidationOptions,
             validator : {
-                validate : (value : unknown , args : ValidationArguments) => {
+                validate(value : unknown , args : ValidationArguments){
                    
                     const relatedPropertyName = args.constraints as any
                    
