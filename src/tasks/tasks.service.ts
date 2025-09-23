@@ -32,8 +32,9 @@ export class TasksService {
       if (Taskquery.name) {
         tasks = await this.prisma.task.findMany({
           where: {
-            name: Taskquery.name,
-            description: Taskquery.name,
+            name:  {
+              contains : Taskquery.name
+            },
             user: user
           }
         }) as Task[]

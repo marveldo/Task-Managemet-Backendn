@@ -79,7 +79,7 @@ export class UsersService {
             message : "Invalid Credentials"
           })
        }
-       this.verifypassword(password , user.password)
+       await this.verifypassword(password , user.password)
        
        return {
         access : this.Jwtservice.sign({username : user.username , id : user.id })
