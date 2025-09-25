@@ -1,9 +1,9 @@
 import {IsNotEmpty, IsString, IsStrongPassword} from 'class-validator'
 import { IsSimilar } from './custom-user-validation'
 import { ApiProperty , OmitType} from '@nestjs/swagger';
-import { User } from 'src/generated/client';
-import { Task } from 'src/generated/client';
-import { Taskresponse } from 'src/tasks/tasks.model';
+import { User } from '../generated/client';
+import { Task } from '../generated/client';
+import { Taskresponse } from '../tasks/tasks.model';
 
 
 export class UserCreateDto {

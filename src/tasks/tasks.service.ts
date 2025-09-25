@@ -1,8 +1,8 @@
 import { ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { Task, TaskDTO, STATUS, TaskUpdateDTO, TaskFilterDTO } from './tasks.model';
 import { v4 as uuid } from "uuid"
-import { PrismaService } from 'src/prisma/prisma.service';
-import { User } from 'src/generated/client';
+import { PrismaService } from '../prisma/prisma.service';
+import { User } from '../generated/client';
 @Injectable()
 export class TasksService {
   private readonly prisma: ReturnType<PrismaService['extendPrismaClient']>

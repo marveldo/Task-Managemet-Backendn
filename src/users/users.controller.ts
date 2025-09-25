@@ -5,7 +5,7 @@ import { UsersService } from './users.service';
 import { AuthGuard } from '@nestjs/passport';
 import { Request } from 'express';
 import { ApiResponse } from '@nestjs/swagger';
-import { BadRequestResponse } from 'src/tasks/tasks.model';
+import { BadRequestResponse } from '../tasks/tasks.model';
 
 @Controller('auth')
 export class UsersController {
